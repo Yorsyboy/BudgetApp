@@ -10,6 +10,8 @@ gem 'devise'
 
 gem 'bootstrap', '~> 5.1.3'
 
+gem 'cancancan'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
