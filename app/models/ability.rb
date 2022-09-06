@@ -13,8 +13,8 @@ class Ability
     #
     return unless user.present?
 
-    can :manage, Operation, author_id: user.id
     can :manage, Group, author_id: user.id
+    can :manage, Operation, author_id: user.id
   end
     # The first argument to `can` is the action you are giving the user
     # permission to do.
