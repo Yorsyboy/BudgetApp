@@ -1,5 +1,5 @@
 class GroupsController < ApplicationController
-    load_and_authorize_resource
+  load_and_authorize_resource
 
   def index
     @groups = Group.where(author_id: current_user.id).order(created_at: :desc)
