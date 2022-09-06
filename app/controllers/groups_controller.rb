@@ -28,4 +28,3 @@ class GroupsController < ApplicationController
     gp
   end
 end
-end
