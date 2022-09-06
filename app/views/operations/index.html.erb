@@ -1,28 +1,36 @@
-<header class="header container primary-gradient-background position-relative">
-    <h1 class="position-absolute">
+<header class="bg-primary p-2 d-flex justify-content-around align-items-center">
+    <div>
       <%= link_to groups_path do %>
-        <i class="bi bi-arrow-left"></i>
-      <% end %>
-      </h1>
-    <h1 class="text-center margin-y">Operations for <%= @group.name %></h1>
-  </header>
-  <section>
-    <div class="money-amount">
-      <p  class="text-center">Money spent: $<%= group_amount(@group) %></p>
+        <i class="bi bi-caret-left-fill m-2 fs-4 rounded p-2 text-dark"></i>
+      <% end %>  </div>
+    <div>
+      <h1 class="text-center fs-2 text-light"> Operations for <%= @group.name %> </h1>
     </div>
+    <div>
+      <li class="nav-item">
+        <%= link_to "Sign Out", destroy_user_session_path, method: :get, class: 'nav-link btn btn-danger text-white' %>
+      </li>
+  </header>
+  
+  <div class="bg-secondary text-light">
+    <p  class="text-center p-2">Money spent: $<%= group_amount(@group) %></p>
+  </div>
+  
+  <section class="container">
+  
     <% if @operations.empty? %>
-      <div class="information padding border">
+      <div class="mt-5">
         <h3 class="text-center">No operations yet.</h3>
       </div>
     <% else %>
       <% @operations.each do |operation| %>
-        <div class="information d-flex justify-content-evenly padding border">
-          <h3><%= operation.name %></h3>
-          <p>$<%= operation.amount %></p>
+        <div class="p-4 border border-1 shadow-sm m-4 d-flex justify-content-between">
+          <h3 class="m-2"><%= operation.name %></h3>
+          <p class="m-2 fs-4 fw-bolder text-secondary">$<%= operation.amount %></p>
         </div>
       <% end %>
     <% end %>
     <div class="margin">
-      <%= link_to "Add operation", new_operation_path, class: "btn" %>
+      <%= link_to "Add operation", new_operation_path, class: "fixed-bottom d-flex justify-content-center w-100 m-auto btn-lg p-4 mt-4 btn btn-success" %>
     </div>
   </section>
