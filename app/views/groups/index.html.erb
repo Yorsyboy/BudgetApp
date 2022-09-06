@@ -13,7 +13,7 @@
         <div class="container flex-fill justify-content-between">
           <div class="d-flex justify-content-between">
             <h3><%= link_to group.name, group_operations_path(group_id: group.id) %></h3>
-            <p>$<%= group_amount(group) %></p>
+            <p>$<%= group_amount(group)%></p>
           </div>
           <small>
             <%= group.created_at.strftime("%d %b %Y") %>
