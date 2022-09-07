@@ -2,10 +2,7 @@
 This is a mobile web application where you can manage your budget whereby you have a list of transactions associated with a category, so that users can see how much money they spent and on what they spent their money on.
 
 ## Live Demo
-[Budget App](https://bugdetapp.herokuapp.com/)
-
-### Live Presentation
-[Budget App video]()
+[Budget App](https://bugdetapp.herokuapp.com/
 
 ## Clone Project
 - STEP 1:
