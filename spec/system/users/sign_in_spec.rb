@@ -26,7 +26,6 @@ RSpec.describe 'Sign in page', type: :system do
     fill_in 'Email', with: 'user@mail.com'
     fill_in 'Password', with: '123456'
     click_button 'Log in'
-
   end
 
   it 'should sign in with valid email and password' do
