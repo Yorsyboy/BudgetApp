@@ -1,0 +1,18 @@
+<header class="bg-primary p-2 d-flex justify-content-around align-items-center">
+    <div>
+      <%= link_to groups_path do %>
+        <i class="bi bi-caret-left-fill m-2 fs-4 rounded p-2 text-dark"></i>
+      <% end %>  
+    </div>
+    <div>
+      <h1 class="text-center fs-2 text-light"> Add Operations </h1>
+    </div>
+    <div>
+      <li class="nav-item">
+        <%= link_to "Sign Out", destroy_user_session_path, method: :get, class: 'nav-link btn btn-danger text-white' %>
+      </li>
+  </header>
+  
+  <div class="container">
+    <%= render "shared/operation_form" %>
+  </div>

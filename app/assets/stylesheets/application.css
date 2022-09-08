@@ -1,0 +1,27 @@
+.d-flex.border.border-1.p-4.shadow-sm.align-items-center.mt-3.me-auto.group_card {
+  justify-content: space-between;
+}
+
+li.nav-item {
+  list-style-type: none;
+}
+
+header.headercontainer {
+  text-align: center;
+  background-color: #3778c2;
+  padding: 15px;
+}
+
+.actions.form-group {
+  background-color: #3778c2;
+  margin: 20px 0;
+  width: 85px;
+}
+
+.border {
+  margin-top: 20px;
+}
+
+.btn.btn-success {
+  background-color: #5fb523;
+}
