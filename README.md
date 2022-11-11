@@ -14,10 +14,10 @@ This is a mobile web application where you can manage your budget whereby you ha
 - STEP 4:
   - visit `localhost:3000` on your browser
 
-  ## Run test suits
+ ## Run test suits
   > rspec spec
 
-  ## Technologies Used
+ ## Technologies Used
 * Language (Ruby on Rails)
 * PostgreSQL (Database)
 
